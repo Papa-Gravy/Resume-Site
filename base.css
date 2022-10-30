@@ -1,0 +1,38 @@
+:root {
+    --font1: 'Roboto Mono', monospace;
+    --border1: 1em solid #dcdcdc;
+}
+body {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 3, auto;
+}
+h1 {
+    font-family: var(--font1);
+    color: blue;
+    text-align: center;
+}
+main {
+    font-family: var(--font1);
+    color: aquamarine;
+    text-align: center;
+    border: var(--border1);
+}
+header {
+    width: 100%;
+    display: flex;
+    grid-column: 1/-1;
+}
+.nav-bar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.nav-bar li {
+    margin: 2%;
+    font-family: var(--font1);
+    color: var(--border1);
+}
+.nav-bar li a:visited {
+    color: var(--border1);
+}
